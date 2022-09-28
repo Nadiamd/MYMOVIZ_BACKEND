@@ -8,7 +8,7 @@ module.exports = router;
 const OWM_API_KEY = process.env.OWM_API_KEY;
 
 router.get('/movie', (req, res) => {
-        fetchfetch(`https//:api.themoviedb.org/3/movie/76341?api_key=${OWM_API_KEY}&language=fr`) 
+        fetch(`https//:api.themoviedb.org/3/movie/76341?api_key=${OWM_API_KEY}&language=fr`) 
           
  .then(response => response.json())
  .then(data => {
